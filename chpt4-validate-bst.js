@@ -1,0 +1,4 @@
+function checkIfBinarySearchTree(rootNode) {
+
+	
+}
