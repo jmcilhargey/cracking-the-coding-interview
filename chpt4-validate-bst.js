@@ -28,3 +28,5 @@ function isValidBinarySearchTree(rootNode) {
   // We've traversed the tree without violating rules for a valid BST
   return true;
 }
+
+/* This takes O(n) since we review every node in the tree and takes up to O(n) space -- O(lg n) if balanced because then height is lg n and the height is the max pushed to our stack. Another way to handle this is with recursion where the min and max are passed back into the function at each call. The downside to using recursion is that you risk a stack overflow since the call stack builds up with each function call. */
