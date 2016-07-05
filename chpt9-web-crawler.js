@@ -45,6 +45,7 @@ function crawlPage() {
   var domElements = document.getElementsByTagName("*");
   var content = [];
   // Get all inner html content and some kind of signature for the webpage content
+  // We could be more specific like selecting Element.tagName === "h1" or only selecting segments of the page by modifying our loop conditions
   for (var i = 0; i < domElements.length; i++) {
     if (domElements[i].innerHTML) {
       content.push(jsHash(domElements[i].innerHTML));
