@@ -22,7 +22,7 @@ function findLargestStackOfBoxes(stackOfBoxes, currIndex) {
     }
   }
   // Don't forget to add in the height for this box
-  maxHeight += lastBox.height;
+  maxHeight += currBox.height;
   
   return maxHeight;
 }
